@@ -1,5 +1,9 @@
+// ConsoleApplication1.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
 #include <iostream>
 #include <cmath>
+#include <stdalign.h>
 using namespace std;
 
 int mayor(int a, int b, int c);
@@ -9,6 +13,7 @@ int suma(int x1, int x2);
 
 int main() {
     int opcion;
+    system("color 02");
 
     do {
         cout << "Elige una opcion:" << endl;
@@ -41,7 +46,7 @@ int main() {
         }
         case 3: {
             int cantidad;
-            cout << "¿Cuantos productos deseas ingresar? ";
+            cout << "Cuantos productos deseas ingresar? ";
             cin >> cantidad;
             pesototal(cantidad);
             break;
@@ -57,7 +62,7 @@ int main() {
             break;
         }
         case 0:
-            cout << "¡Hasta luego!" << endl;
+            cout << "Hasta luego!" << endl;
             break;
         default:
             cout << "Opcion no valida. Intenta de nuevo." << endl;
@@ -119,3 +124,13 @@ int suma(int x1, int x2)
     cout << "La suma de dos numeros es: " << suma << endl;
     return suma;
 }
+
+// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
+// Depurar programa: F5 o menú Depurar > Iniciar depuración
+
+// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
+//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
+//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
+//   4. Use la ventana Lista de errores para ver los errores
+//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
+//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
