@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double a, b, c, d, x1, x2;
+    cout << "  ECUACIONES CUADRATICAS\n";
+    cout << "     ax^2 + bx + c = 0\n";
+
+    cout << "Ingrese el valor de a: ";
+    cin >> a;
+    cout << "Ingrese el valor de b: ";
+    cin >> b;
+    cout << "Ingrese el valor de c: ";
+    cin >> c;
+
+    if (a == 0) {
+        cout << "\nNo es una ecuacion cuadratica.\n";
+        return 0;
+    }
+
+    d = pow(b, 2) - 4 * a * c;
+
+    cout << fixed << setprecision(2);
+
+    if (d > 0) {
+        x1 = (-b + sqrt(d)) / (2 * a);
+        x2 = (-b - sqrt(d)) / (2 * a);
+        cout << "\nTiene dos soluciones reales:\n";
+        cout << "x1 = " << x1 << endl;
+        cout << "x2 = " << x2 << endl;
+    }
+    else if (d == 0) {
+        x1 = -b / (2 * a);
+        cout << "\nTiene una solucion real doble:\n";
+        cout << "x = " << x1 << endl;
+    }
+    else {
+        double real = -b / (2 * a);
+        double imag = sqrt(-d) / (2 * a);
+        cout << "\nTiene dos soluciones complejas:\n";
+        cout << "x1 = " << real << " + " << imag << "i\n";
+        cout << "x2 = " << real << " - " << imag << "i\n";
+    }
+
+    cout << "        FIN DEL PROGRAMA\n";
+
+    return 0;
+}
