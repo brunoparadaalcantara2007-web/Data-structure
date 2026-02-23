@@ -1,45 +1,16 @@
-# Programa en C++: Uso de switch y do-while
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int op;
-    do {
-        cout << "MENU\n0.SALIR\n1.SUMA\n2.SIGNO\n3.FACTORIAL\nOPCION: ";
-        cin >> op;
-
-        switch(op) {
-            case 1: {
-                int a, b;
-                cin >> a >> b;
-                cout << a + b << endl;
-                break;
-            }
-            case 2: {
-                int n;
-                cin >> n;
-                if (n > 0) cout << "POSITIVO\n";
-                else if (n == 0) cout << "NULO\n";
-                else cout << "NEGATIVO\n";
-                break;
-            }
-            case 3: {
-                int n;
-                cin >> n;
-                long long f = 1;
-                int i = 1;
-                while (i <= n) {
-                    f *= i;
-                    i++;
-                }
-                cout << f << endl;
-                break;
-            }
-        }
-    } while (op != 0);
-
-    return 0;
-}
-```
+                   _nnnn_
+                  dGGGGMMb
+                 @p~qp~~qMb
+                 M|@||@) M|
+                 @,----.JM|
+                JS^\__/  qKL
+               dZP        qKRb
+              dZP          qKKb
+             fZP            SMMb
+             HZM            MMMM
+             FqM            MMMM
+           __| ".        |\dS"qML
+           |    `.       | `' \Zq
+          _)      \.___.,|     .'
+          \____   )MMMMMP|   .'
+               `-'       `--'
