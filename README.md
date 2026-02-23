@@ -1,7 +1,6 @@
+# Programa en C++: Uso de switch y do-while
 
-#CODING WORKIN DO CLASS
-
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -38,12 +37,9 @@ int main() {
                 cout << f << endl;
                 break;
             }
-            case 0:
-                break;
-            default:
-                cout << "ERROR\n";
         }
     } while (op != 0);
 
     return 0;
 }
+```
